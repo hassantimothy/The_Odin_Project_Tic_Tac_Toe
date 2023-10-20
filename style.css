@@ -1,0 +1,169 @@
+
+@property --rotate {
+    syntax: "<angle>";
+    initial-value: 132deg;
+    inherits: false;
+  }
+  
+  :root {
+    
+    font-size: 16px;
+    font-family: "Ubuntu Condensed", sans-serif;
+    --text-primary: rgb(202, 196, 196);
+    --text-secondary: white;
+    --back-ground-color: linear-gradient(to top right, #020624 30%, #030921 1%, #051c30, #0c1e34, #0f172a, #0f1b2f, #111827, #1e293b);
+    --transition-speed: 0.1s;
+    --drawer-width: clamp(200px, 20vw, 300px);
+    --gh-avatar:  url("https://github.com/hassantimothy.png");
+    --gh-avatar2: url("https://github.com/Archybella.png");
+    --gh-avatar3: url("https://github.com/MeFerdi.png");
+    --gh-avatar4: url("https://github.com/INNOCENTMUSAKHI.png");
+    --card-background: linear-gradient(to top right, #0f172a, #1f2937, #364252, #4b5563, #e0e0e0);;
+    --content-gray: rgb(235, 235, 235);
+    --transition-notDrawer: margin-left 0.1s ease-in;
+    --transition-drawer: width 0.1s ease-in;
+    --border-outline-color: #364252:
+  
+  /* trial */
+    --card-height: 65vh;
+    --card-width: calc(var(--card-height) / 1.5);
+  }
+
+
+
+
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--text-primary);
+    background: var(--back-ground-color);
+    min-width: 200px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center; /* Vertically center content */
+}
+
+/* Use media queries to make the layout responsive */
+@media (max-width: 800px) {
+    body {
+        width: 90vw;
+    }
+    /* Additional responsive styles for smaller screens */
+}
+
+.card{
+    font-size: 16px;
+    width: 30rem;
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    background-color: #1e293b;
+    opacity: 60%;
+    border-radius: 0.6rem;
+    background-color: #1e293b;
+
+
+}
+
+
+
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
+  }
+  
+  .cell {
+    background-color: #e0dddd;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    color: #051c30;
+    font-size: 24px;
+    font-weight: bold;
+    border: 2px solid #333;
+    cursor: pointer;
+  }
+  .cell:hover{
+    background-color: antiquewhite;
+
+  }
+  
+  /* Add styling to the endgame message */
+  .endgame {
+    text-align: center;
+    display: none;
+    font-size: 53px;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  
+  /* Style the symbol selection buttons */
+  .selectSym p {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  /* Style the replay button */
+  button {    
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-weight: 300;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #19335d ;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1.8rem;
+    border-radius: 10px;
+    font-size: 1rem;
+    text-align: center;
+
+  }
+
+  .btn{
+    display: inline-block;
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #19335d;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    text-align: center;
+  }
+
+
+  button:hover{
+    background-color: #076885;
+    color: #ffffff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    
+  }
+
+  .selectSym{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+.controls{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-items: start;
+    gap: 20rem;
+}
+
+  
